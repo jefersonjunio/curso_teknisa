@@ -1,14 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    font-family: 'Sarala', sans-serif;
+}
+
+:root {
+    --cor-tela-fundo: rgb(183, 238, 220);
+    --cor-primaria-btn: rgb(20, 56, 44);
+    --cor-hover-btn: rgb(39, 136, 104);
+    --cor-titulo: rgb(20, 56, 44); 
+}
+
 .container {
+    height: 100vh;
+    width: 100%;
     text-align: center;
+    background-color: var(--cor-tela-fundo);
+}
+
+.header h3 {
+    padding: 20px;
+    color: var(--cor-titulo);
+   
 }
 
 .body input {
     padding: 8px;
     margin-right: 8px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .body button {
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
     padding: 8px 16px;
+    background-color: var(--cor-primaria-btn);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.body button:hover {
+    background-color: var(--cor-hover-btn);
 }
 
 .footer {
